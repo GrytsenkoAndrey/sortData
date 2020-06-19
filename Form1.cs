@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace sortData
 {
-    public partial class Form1 : Form
+    public partial class frmSort : Form
     {
-        public Form1()
+        public frmSort()
         {
             InitializeComponent();
         }
