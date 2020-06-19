@@ -42,6 +42,8 @@
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,9 +61,8 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(125, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 13);
+            this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Удаляем текст";
             // 
             // label3
             // 
@@ -173,6 +174,15 @@
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "openFileDialog1";
+            this.openFileDialog.Filter = "\"Текстовые файлы (*.txt)|*.txt\"";
+            // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.Filter = "\"Текстовые файлы (*.txt)|*.txt\"";
+            // 
             // frmSort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +226,8 @@
         private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog;
     }
 }
 
